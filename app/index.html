@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Ledger — GTA VI PS5 Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">LL</div>
+    <div>
+      <h1>Leonida Ledger</h1>
+      <p class="sub">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; 1,000 Gamerscore</p>
+    </div>
+  </div>
+  <div class="progress" id="progress" aria-label="Trophy progress">
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    <div class="progress-text"><span id="progress-count">0 / 55 earned</span><span id="progress-gs">0 / 1,000 G</span></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <button class="tab active" data-view="guide" type="button">Guide</button>
+  <button class="tab" data-view="roadmap" type="button">Roadmap</button>
+  <button class="tab" data-view="missables" type="button">Missables</button>
+  <button class="tab" data-view="sources" type="button">Sources</button>
+</nav>
+
+<main>
+  <section id="view-guide" class="view active">
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+      <select id="filter-kind" aria-label="Filter by kind">
+        <option value="">All kinds</option>
+        <option value="platinum">Platinum</option>
+        <option value="story">Story</option>
+        <option value="side">Side stories</option>
+        <option value="robbery">Robbery</option>
+        <option value="activity">Activities</option>
+        <option value="collectible">Collectibles</option>
+        <option value="combat">Combat &amp; hidden moments</option>
+        <option value="completion">100% completion</option>
+      </select>
+      <select id="filter-grade" aria-label="Filter by grade">
+        <option value="">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+      <select id="filter-status" aria-label="Filter by status">
+        <option value="">All trophies</option>
+        <option value="earned">Earned</option>
+        <option value="missing">Not earned yet</option>
+      </select>
+      <select id="sort" aria-label="Sort trophies">
+        <option value="list">List order</option>
+        <option value="grade">Grade (best first)</option>
+        <option value="name">Name A–Z</option>
+      </select>
+      <label class="spoiler"><input id="spoiler" type="checkbox"> Hide spoilers</label>
+    </div>
+    <div class="actions">
+      <button id="export" type="button">Export progress</button>
+      <label class="import-btn">Import progress<input id="import" type="file" accept=".json,application/json" hidden></label>
+      <button id="reset" type="button">Reset progress</button>
+      <span class="count" id="shown-count"></span>
+    </div>
+    <div id="trophy-list" class="trophy-list" aria-live="polite"></div>
+    <p class="hint">Progress is saved in this browser only (localStorage). Export a backup before you clear site data.</p>
+  </section>
+
+  <section id="view-roadmap" class="view">
+    <h2>Roadmap to the Platinum — about 200 hours</h2>
+    <p class="lede">One playthrough, no online trophies, no difficulty trophies, no mission medals. It is long, not hard. Cheats switch off trophies and saving, so keep them off your trophy save.</p>
+    <ol class="stages">
+      <li><h3>Stage 1 — Play the story, Chapters 1–5 <span class="hours">60–80 h</span></h3>
+        <p>Play the story in order and do optional missions as they appear. Before you finish Chapter 1, do Lucia&rsquo;s balcony meditation (see Missables) and keep a manual save at the start of every chapter — there is no mission replay. Scan vehicles and study animals as you go; the counts carry into 100%.</p></li>
+      <li><h3>Stage 2 — Side stories &amp; Strangers &amp; Freaks <span class="hours">~20 h</span></h3>
+        <p>Finish the five side-story strands (Kenton, Billy, Andy, Randy, Tyrone) and eight Strangers &amp; Freaks strands. Andy&rsquo;s, Billy&rsquo;s and Tyrone&rsquo;s strands have their own trophies and do not count toward Strangers &amp; Freaks — check the counter after each one.</p></li>
+      <li><h3>Stage 3 — Robberies &amp; crime <span class="hours">~15 h</span></h3>
+        <p>Jewelry stores (Snap Gun from Chapter 3), armored trucks, shops with your partner, bank vaults (Chapter 4), and one illegal operation per gang. Vault escapes with your partner also cover Hot Together.</p></li>
+      <li><h3>Stage 4 — Activities &amp; collectibles <span class="hours">~40 h</span></h3>
+        <p>Races, drone races, shooting ranges, fishing, arcades, meditation spots, card sets, WAiNK It locations, garages and vehicle registrations. Most of these are pleasant cleanup once the map is open.</p></li>
+      <li><h3>Stage 5 — The long grinds <span class="hours">~50 h</span></h3>
+        <p>250 stunts (300 for 100%), 50 Challenges (70 for 100%), 100 vehicles discovered (200 for 100%), and the Criminal Profile actions. These fill up fastest when you stop fast-travelling and drive everywhere.</p></li>
+      <li><h3>Stage 6 — 100% completion cleanup <span class="hours">~15 h</span></h3>
+        <p>After the credits, open Progress &gt; Stats &gt; 100% Completion and work the 35-task checklist down to zero. When it hits 100%, A Long Road pops — and with it, Vice Got a Price!</p></li>
+    </ol>
+  </section>
+
+  <section id="view-missables" class="view">
+    <h2>Missables — only one trophy can be missed</h2>
+    <div class="callout danger">
+      <h3>Positive Mental Attitude — meditate at every spot</h3>
+      <p>Lucia&rsquo;s balcony meditation in Chapter 1 counts toward this trophy and disappears after that chapter ends. After Lucia is home, check the kitchen in the morning (a morning after the mission Down to Earth is the usual time). She heads out to the balcony of Jason&rsquo;s house to meditate — follow her and accept the optional task. It is not confirmed that this exact spot is required, so do it anyway and keep a Chapter 1 save until the trophy pops.</p>
+    </div>
+    <h3>Save strategy (no mission replay, no New Game Plus)</h3>
+    <ul>
+      <li>Keep one manual save at the start of every chapter, plus one untouched save from just before the final mission. The game has 15 manual save slots plus one autosave — rotate the rest.</li>
+      <li>Race Against Yago in Chapter 3 is time-sensitive (hourglass icon) and its strand counts toward Strangers &amp; Freaks. Save first, then race the moment it appears.</li>
+      <li>Everything outside the story stays available after the credits, including the side-story finales and the 100% checklist.</li>
+      <li>Never use cheats on your trophy save — they should switch off both trophies and saving.</li>
+    </ul>
+  </section>
+
+  <section id="view-sources" class="view">
+    <h2>Sources &amp; accuracy</h2>
+    <p>The trophy list below is the list as reported at launch on 19 November 2026: 55 trophies (1 Platinum, 2 Gold, 6 Silver, 46 Bronze), 28 hidden, worth 1,000 Gamerscore on Xbox, all single-player.</p>
+    <ul>
+      <li><strong>Exophase</strong> (via Push Square&rsquo;s report of the PS5 list) — the source for the count and the Platinum.</li>
+      <li><strong>Xbox achievement list</strong> — the source for names, descriptions and Gamerscore values; grades for PlayStation come from trophy hunters who have unlocked them.</li>
+      <li><strong>OutputLag</strong> and <strong>GTA Vibes</strong> trophy guides — cross-checked for every name, grade and unlock method on 19 November 2026.</li>
+      <li><strong>KeenGamer</strong> — roadmap and missable-trophy details.</li>
+      <li><strong>PSNProfiles community</strong> — the earlier circulating list was picked apart there as probably fake; the list in this guide is the launch-day one, not that leak.</li>
+    </ul>
+    <p>Rockstar, Sony and Microsoft have not published an official trophy list. A few hidden trophies still have no confirmed unlock method at launch (In The Beginning…, Capital Offense, Bad Luck I Guess, The Truth Is Out There, Ten Pin) — their descriptions are the official ones, and the guides for them say what is known so far. The Chapter 2 trophy name is printed censored by the reporting sources.</p>
+    <p>All guide text in this app is original writing for this entry. No Rockstar artwork, logos or fonts are used.</p>
+  </section>
+</main>
+<footer class="foot">
+  <p>Leonida Ledger — an offline guide &amp; tracker for Grand Theft Auto VI on PS5. Your checklist lives in your browser only.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
